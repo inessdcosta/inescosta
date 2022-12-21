@@ -806,6 +806,7 @@ footer nav div{
     bottom: 80px;
     right: 200px;
     left: 20px;
+    overflow-x: hidden; 
   }
 
   .home-imgs{
