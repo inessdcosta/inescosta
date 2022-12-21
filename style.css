@@ -47,11 +47,12 @@ a {
 
 /* COLORS */
 /* LIGHT vs DARK MODE */
- :root.light {
+:root.light {
   --dark: #f7f3ef;
   --light: #000000;
   --filter-logo: brightness(0);
 }
+
 
 :root:not(.light){
   --light: #E7D1B2;
@@ -687,7 +688,10 @@ footer nav div{
 
   body {
     overflow-x: hidden;
-    font-size: 3.5vh;
+  }
+
+  p {
+    font-size: 3vh;
   }
 
   h2 {
@@ -701,6 +705,10 @@ footer nav div{
   /*MENU*/
   .menu {
     padding:20px;
+  }
+
+  .menu li{
+    font-size: 3vh;
   }
 
   /*burger menu*/
@@ -752,29 +760,29 @@ footer nav div{
     transition: 0.3s;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     padding-top: 20px;
   }
 
   .main-menu ul {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .main-menu li {
-    border-top: solid 1.5px var(--light);
-    padding-top: 15px;
-    /*border-image-source: url('images/gifs/underline\(selected\).png');*/
+    padding-top: 5px;
+  }
+
+  .main-menu img {
+    filter: var(--filter-logo);
   }
 
   .main-menu.active{
-    top: 22px;
-    /*responsivo = altura header*/
+    top: 60px;
   }
 
   /* SUB MENU */
   .sub-menu-desktop {
     display:none;
-
   }
 
   .sub-menu-mobile {
@@ -784,6 +792,7 @@ footer nav div{
 
   .sub-menu-mobile li {
     border-top: none;
+    padding-top: 5px;
   }
 
   .main-menu li:hover ,
@@ -793,11 +802,11 @@ footer nav div{
   }
 
   .main-menu li:hover {
-  padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   .sub-menu-desktop li:hover {
-  padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   /*HOME ................................*/
@@ -806,11 +815,10 @@ footer nav div{
     bottom: 80px;
     right: 200px;
     left: 20px;
-    overflow-x: hidden; 
   }
 
   .home-imgs{
-    max-height: 180px;
+    max-height: 150px;
   }
 
   #contactos {
@@ -934,6 +942,7 @@ footer nav div{
   /*GENERAL*/
   body {
     font-size: 2.3vh;
+    overflow-x: hidden;
   }
 
   h2 {
@@ -1002,8 +1011,4 @@ footer nav div{
 /*DESKTOP*/
 @media only screen and (min-width: 992px) {
 }
-
-
-
-
 
