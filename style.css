@@ -802,9 +802,10 @@ footer nav div{
 
   /*HOME ................................*/
   .imgs-space{
-    top: 400px;
-    bottom: 100px;
-    right: 220px;
+    top: 300px;
+    bottom: 80px;
+    right: 200px;
+    left: 20px;
   }
 
   .home-imgs{
