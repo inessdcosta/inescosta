@@ -499,7 +499,7 @@ input:checked + .slider:before {
 #creditos {
   padding-top: 200px;
   padding-bottom: 200px;
-  font-size: 15pt;
+  font-size: 2vh;
 }
 
 #creditos a {
@@ -598,7 +598,7 @@ input:checked + .slider:before {
 }
 
 .notas {
-  font-size: 2vh;;
+  font-size: 2vh;
 }
 
 .logos {
