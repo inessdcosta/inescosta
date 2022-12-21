@@ -669,6 +669,7 @@ footer nav div{
   border-radius: 15px;
   border: solid 1px var(--light);
   padding: 30px;
+  height: calc(100% - 131px);
 }
 
 #ilustracao div p{
