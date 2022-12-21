@@ -47,13 +47,13 @@ a {
 
 /* COLORS */
 /* LIGHT vs DARK MODE */
-:root:not(.light) {
+ :root.light {
   --dark: #f7f3ef;
   --light: #000000;
   --filter-logo: brightness(0);
 }
 
-:root.light {
+:root:not(.light){
   --light: #E7D1B2;
   --dark: #000000;
   --filter-logo-hover:brightness(0);
