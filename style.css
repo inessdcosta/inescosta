@@ -203,6 +203,10 @@ header .setas {
   justify-content: space-between;
 }
 
+.main-menu img {
+  display: none;
+}
+
 .main-menu li:hover ,
 .sub-menu-desktop li:hover {
   cursor: pointer;
@@ -773,6 +777,7 @@ footer nav div{
   }
 
   .main-menu img {
+    display: block;
     filter: var(--filter-logo);
   }
 
