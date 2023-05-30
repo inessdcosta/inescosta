@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ana Leite">
+  <title>Inês Costa</title>
+
+  <link rel="icon" href="images/favicon.gif" type="image/gif" >
+
+  <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+
+  <header>
+  <!-- MAIN MENU -->
+  <nav class="menu">
+
+    <ul class="main-menu">
+      <li><a href="index.html" id="main-btn" class="hover-underline-animation">Inês Costa</a></li>
+
+      <li><a href="pesquisa-bolso-grafico.html" class="hover-underline-animation">Pesquisa</a></li>
+
+      <!-- SUB MENU MOBILE (ensaios)-->
+      <ul class="sub-menu-mobile">
+        <li><a href="pesquisa-bolso-grafico.html">Bolso Gráfico</a></li>
+        <li><a href="ensaios-memorias.html">Memórias de Pau-Preto e Marfim</a></li>
+        <li><a href="ensaios-toque.html">Toque</a></li>
+        <li><a href="ensaios-amelia.html">Amélia</a></li>
+      </ul>
+
+      <hr>
+
+      <li><a href="design-residir.html" class="header-selected">Design Gráfico</a></li>
+
+      <!-- SUB MENU MOBILE (Design)-->
+      <ul class="sub-menu-mobile">
+        <li><a href="design-residir.html" class="header-selected">Residir</a></li>
+        <li><a href="design-erre.html">ERRE</a></li>
+        <li><a href="design-erre.html">NOVO</a></li>
+      </ul>
+
+      <hr>
+      
+      <li><a href="ilustracao.html" class="hover-underline-animation">Ilustração</a></li>
+      
+    </ul>
+
+    <!-- BURGER MENU -->
+    <div class="hamburger">
+      <div>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <a href="index.html" >Inês Costa</a>
+
+    </div>
+
+    <!-- DARK / LIGHT MODE -->
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    
+  </nav>
+
+  <!-- SUB-MENU -->
+  <nav class="sub-menu-desktop">
+
+    <ul>
+      <img src="images/icons/seta-big-right.png" class="setas" alt="">
+      <li><a href="design-residir.html" class="hover-underline-animation" >Residir</a></li>
+      <li><a href="design-erre.html" class="hover-underline-animation">ERRE</a></li>
+      <li><a href="design-erre.html" class="header-selected">NOVO</a></li>
+    </ul>
+
+  </nav>
+
+  </header> 
+
+  <!-- DESIGN - RESIDIR
+    ................................... -->
+  <section class="projetos">
+    
+    <article class="texto-projetos">
+      <h2>NOVO</h2>
+    
+      <p>Design da identidade visual e catálogo da exposição Residir '21, um programa promovido pelo Espaço Cultural Lameiro que propõe a organização de residências artísticas através de uma colaboração com as comunidades locais. O projeto foi realizado dentro do contexto do ERRE, um projeto da CRL/Central Elétrica, com o apoio do Garantir Cultura.</p>
+    </article>
+    
+    <article class="imagens-projetos">
+      <img src="images/design/nova-pasta/1.jpg" alt="">
+      <img src="images/design/residir/2.png" alt="">
+      <img src="images/design/residir/3.jpg" alt="">
+      <img src="images/design/residir/4.png" alt="">
+      <img src="images/design/residir/5.png" alt="">
+      <img src="images/design/residir/6.png" alt="">
+      <img src="images/design/residir/7.png" alt="">
+      <img src="images/design/residir/8.jpg" alt="">
+      <img src="images/design/residir/9.jpg" alt="">
+      <img src="images/design/residir/10.jpg" alt="">
+      <img src="images/design/residir/11.jpg" alt="">
+      <img src="images/design/residir/12.jpg" alt="">
+      <img src="images/design/residir/13.jpg" alt="">
+      <img src="images/design/residir/14.jpg" alt="">
+      <img src="images/design/residir/POSTAIS_GIF.gif" alt="">
+    </article>
+    
+  </section>
+    
+  <article class="ficha-tecnica">
+    <p>Coordenação <b> João Melo</b> 
+      <br>Produção <b>Luísa Rosas </b> e <b> João Melo</b>  
+      <br> Artistas residentes <b> Betina Juglair</b>,<b> Bruno Lisboa</b>, <b>Carlota Jardim</b> e <b>Gonçalo Gouveia</b>,<b> 
+      <br>Elisabete Sousa</b>, <b>Flora Paim</b>, <b>Hugo Oliveira</b>, <b>Joana Cruz</b>, <b>Letícia Maia</b>, <b>Luciana Bastos</b>, <b>Pedro Moreira</b>
+      <br> Design Gráfico <b> Inês Costa </b> e <b> Thiago Liberdade</b>
+      <br>Ilustrações Originais <b>João Melo</b>
+    </p>
+  </article>
+  <!--...............................-->
+
+
+
+  <!-- FOOTER -->
+  <footer>
+      <nav> 
+        <div onclick="topFunction()"><img src="images/icons/seta-top.png" class="setas" alt=""></div>
+      </nav>
+  </footer>
+
+  <!-- JAVA SCRIPT -->
+  <script src="main.js"></script>
+
+</body>
+
+
+</html>
