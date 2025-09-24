@@ -146,8 +146,7 @@ function typeInstagram() {
   }
 }
 
-
-// ILUSTRACAO -------------------------------------------
+// ILUSTRAÇÃO -------------------------------------------
 // SCROLL HORIZONTAL
 let sectionFotografia = document.querySelector("#fotografia");
 let sectionExp = document.querySelector("#experiencias-visuais");
@@ -157,11 +156,13 @@ window.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     sectionFotografia.scrollLeft += evt.deltaY;
   }
-  
+
   if (evt.target.closest("#experiencias-visuais")) {
     evt.preventDefault();
     sectionExp.scrollLeft += evt.deltaY;
   }
 });
+
+
 
 
