@@ -154,5 +154,11 @@ let sectionFotografia = document.querySelector("#fotografia");
 window.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     sectionFotografia.scrollLeft += evt.deltaY; 
+  let sectionExp = document.querySelector("#experiencias-visuais");
+
+window.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    sectionExp.scrollLeft += evt.deltaY; 
 
 });
+
