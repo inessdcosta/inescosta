@@ -149,9 +149,10 @@ function typeInstagram() {
 
 // ILUSTRACAO -------------------------------------------
 // SCROLL HORIZONTAL
-let sectionIlustracao = document.querySelector("#ilustracao");
+let sectionFotografia = document.querySelector("#fotografia");
 
 window.addEventListener("wheel", (evt) => {
     evt.preventDefault();
-    sectionIlustracao.scrollLeft += evt.deltaY; 
+    sectionFotografia.scrollLeft += evt.deltaY; 
+
 });
