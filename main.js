@@ -150,15 +150,18 @@ function typeInstagram() {
 // ILUSTRACAO -------------------------------------------
 // SCROLL HORIZONTAL
 let sectionFotografia = document.querySelector("#fotografia");
+let sectionExp = document.querySelector("#experiencias-visuais");
 
 window.addEventListener("wheel", (evt) => {
+  if (evt.target.closest("#fotografia")) {
     evt.preventDefault();
-    sectionFotografia.scrollLeft += evt.deltaY; 
-  let sectionExp = document.querySelector("#experiencias-visuais");
-
-window.addEventListener("wheel", (evt) => {
+    sectionFotografia.scrollLeft += evt.deltaY;
+  }
+  
+  if (evt.target.closest("#experiencias-visuais")) {
     evt.preventDefault();
-    sectionExp.scrollLeft += evt.deltaY; 
-
+    sectionExp.scrollLeft += evt.deltaY;
+  }
 });
+
 
