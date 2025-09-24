@@ -729,13 +729,13 @@ footer nav div{
 
 
 /* ILUSTRAÇÃO .............................................*/
-#ilustracao {
+#fotografia {
   display: flex;
   overflow-x: auto;
   height: 100vh;
 }
 
-#ilustracao div {
+#fotografia div {
   margin-top: 70px;
   background-color: var(--dark);
   border-radius: 15px;
@@ -744,12 +744,12 @@ footer nav div{
   height: calc(100% - 132px);
 }
 
-#ilustracao div p{
+#fotografia div p{
   font-size: 2.5vh;
   height: 15%;
 }
 
-#ilustracao img{
+#fotografia img{
   padding-top: 25px;
   height: 80%;
 }
@@ -999,18 +999,18 @@ footer nav div{
   
 
 
-  /*ILUSTRACAO .........................*/
-  #ilustracao {
+  /*fotografia .........................*/
+  #fotografia {
     display: block;
     height: auto;
     margin-top: 71px;
   }
   
-  #ilustracao div {
+  #fotografia div {
     margin-top: 0;
   }
 
-  #ilustracao div img{
+  #fotografia div img{
     max-width: 100%;
     height: auto;
   }
@@ -1070,20 +1070,20 @@ footer nav div{
     margin-top: 40px;
   }
 
-  /*ILUSTRACAO .........................*/
-  #ilustracao {
+  /*fotografia .........................*/
+  #fotografia {
     display: block;
     height: auto;
     margin-top: 71px;
   }
     
-  #ilustracao div {
+  #fotografia div {
     margin-top: 0;
     border-left: none;
     border-right: none;
   }
   
-  #ilustracao div img{
+  #fotografia div img{
       max-width: 100%;
       height: auto;
   }
@@ -1093,3 +1093,4 @@ footer nav div{
 /*DESKTOP*/
 @media only screen and (min-width: 992px) {
 }
+
