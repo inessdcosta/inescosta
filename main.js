@@ -148,6 +148,9 @@ function typeInstagram() {
 
 // ILUSTRAÇÃO -------------------------------------------
 // SCROLL HORIZONTAL
+const sectionFotografia = document.querySelector("#fotografia");
+const sectionExp = document.querySelector("#experiencias-visuais");
+
 if (sectionFotografia) {
   window.addEventListener("wheel", (evt) => {
     if (evt.target.closest("#fotografia")) {
@@ -165,6 +168,7 @@ if (sectionExp) {
     }
   });
 }
+
 
 
 
