@@ -66,10 +66,10 @@ let heightSpaceSobre = imgsSpaceSobre.offsetHeight;
 
 // garantir que a imagem não sai fora do espaço
 let maxLeft = Math.max(0, widthSpaceSobre - imgs.offsetWidth);
-let maxBottom = Math.max(0, heightSpaceSobre - imgs.offsetHeight);
+let maxTop = Math.max(0, heightSpaceSobre - imgs.offsetHeight);
 
 imgs.style.left = Math.random() * maxLeft + "px";   // 👈🏼 Horizontally
-imgs.style.bottom = Math.random() * maxBottom + "px"; // 👈🏼 Vertically
+imgs.style.top = Math.random() * maxTop + "px"; // 👈🏼 Vertically
 
 // RANDOM ROTATION
 const getRandomRotation = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
@@ -171,6 +171,7 @@ if (sectionExp) {
     }
   });
 }
+
 
 
 
