@@ -155,22 +155,22 @@ const sectionFotografia = document.querySelector("#fotografia");
 const sectionExp = document.querySelector("#experiencias-visuais");
 
 if (sectionFotografia) {
-  window.addEventListener("wheel", (evt) => {
-    if (evt.target.closest("#fotografia")) {
-      evt.preventDefault();
-      sectionFotografia.scrollLeft += evt.deltaY;
-    }
+  sectionFotografia.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    sectionFotografia.scrollLeft += evt.deltaY;
   });
 }
 
 if (sectionExp) {
-  window.addEventListener("wheel", (evt) => {
-    if (evt.target.closest("#experiencias-visuais")) {
-      evt.preventDefault();
-      sectionExp.scrollLeft += evt.deltaY;
-    }
+  sectionExp.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    sectionExp.scrollLeft += evt.deltaY;
   });
 }
+
+  });
+}
+
 
 
 
