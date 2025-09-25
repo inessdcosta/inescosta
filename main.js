@@ -59,19 +59,22 @@ const sobreImg= document.querySelectorAll('.home-imgs');
 
 sobreImg.forEach(function(imgs) {
 
-  // RANDOM POSITION INSIDE "IMGS-SPACE" 
-  let imgsSpaceSobre = document.querySelector('.imgs-space');
-  let widthSpaceSobre = imgsSpaceSobre.offsetWidth;
-  let heightSpaceSobre = imgsSpaceSobre.offsetHeight;
-    
-  imgs.style.left= Math.random() * widthSpaceSobre + "px"; // 👈🏼 Horizontally
+ // RANDOM POSITION INSIDE "IMGS-SPACE"
+let imgsSpaceSobre = document.querySelector('.imgs-space');
+let widthSpaceSobre = imgsSpaceSobre.offsetWidth;
+let heightSpaceSobre = imgsSpaceSobre.offsetHeight;
 
-  imgs.style.bottom = Math.random() * heightSpaceSobre + "px" ; // 👈🏼 Vertically
+// garantir que a imagem não sai fora do espaço
+let maxLeft = Math.max(0, widthSpaceSobre - imgs.offsetWidth);
+let maxBottom = Math.max(0, heightSpaceSobre - imgs.offsetHeight);
 
-  // RANDOM ROTATION
-  const getRandomRotation = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
+imgs.style.left = Math.random() * maxLeft + "px";   // 👈🏼 Horizontally
+imgs.style.bottom = Math.random() * maxBottom + "px"; // 👈🏼 Vertically
 
-  imgs.style.transform= 'rotate(' + getRandomRotation(-10,10) + 'deg)'; //(entre -10deg e 10deg)
+// RANDOM ROTATION
+const getRandomRotation = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+imgs.style.transform = 'rotate(' + getRandomRotation(-10, 10) + 'deg)'; //(entre -10deg e 10deg)
+
 
   // MOVMENT WITH SCROLL Y 
   document.addEventListener("scroll", (event) => {
@@ -168,6 +171,7 @@ if (sectionExp) {
     }
   });
 }
+
 
 
 
