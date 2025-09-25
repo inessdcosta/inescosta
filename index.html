@@ -1,345 +1,184 @@
-<!-- 
-      
-      WEBSITE DESIGNED AND CODED 
-      BY ANA LEITE 🥛
-      
-      👉 https://aleite.design
-
--->
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Ana Leite">
   <title>Inês Costa</title>
-
-  <link rel="icon" href="images/favicon.gif" type="image/gif" >
-
+  <link rel="icon" href="images/favicon.gif" type="image/gif">
   <link rel="stylesheet" href="style.css">
-    
 </head>
-
 <body>
 
-  <!-- MENU -->
-  <header>
-    
-    <nav class="menu">
+<!-- HEADER / MENU -->
+<header>
+  <nav class="menu">
 
-      <ul class="main-menu">
-        
-        <li><a href="index.html" class="header-selected" id="main-btn">Inês Costa</a></li>
+    <a href="index.html" class="logo">Inês Costa</a>
 
-        <li><a href="projetos-atlas.html" class="hover-underline-animation">Projetos</a></li>
-
-        <!-- SUB MENU MOBILE (ensaios)-->
+    <ul class="main-menu">
+      <li><a href="index.html" class="header-selected" id="main-btn">Inês Costa</a></li>
+      <li><a href="projetos-atlas.html" class="hover-underline-animation">Projetos</a>
         <ul class="sub-menu-mobile">
           <li><a href="projetos-atlas.html">Atlas</a></li>
           <li><a href="projetos-memorias.html">Memórias de Pau-Preto e Marfim</a></li>
-          <li><a href="projetos-amelia.html"></a>Amélia</li>
-            <li><a href="projetos-toque.html">Toque</a></li>
+          <li><a href="projetos-amelia.html">Amélia</a></li>
+          <li><a href="projetos-toque.html">Toque</a></li>
         </ul>
-
-        <hr>
-
-        <li><a href="ensaios-vazio.html" class="hover-underline-animation">Ensaios Visuais</a></li>
-
-        <!-- SUB MENU MOBILE (Design)-->
+      </li>
+      <li><a href="ensaios-vazio.html" class="hover-underline-animation">Ensaios Visuais</a>
         <ul class="sub-menu-mobile">
           <li><a href="ensaios-vazio.html">Medo ao Vazio</a></li>
           <li><a href="ensaios-cartas.html">Cartas sobre Design</a></li>
         </ul>
+      </li>
+      <li><a href="fotografia.html" class="hover-underline-animation">Fotografia</a></li>
+      <li><a href="experiencias-visuais.html" class="hover-underline-animation">Experiências Visuais</a></li>
+    </ul>
 
-        <hr>
-        
-        <li><a href="fotografia.html" class="hover-underline-animation">Fotografia</a></li>
-      
-      </ul>
-            </ul>
-
-        <hr>
-        
-        <li><a href="experiencias-visuais.html" class="hover-underline-animation">Experiências Visuais</a></li>
-      
-      </ul>
-
-      <!-- BURGER MENU -->
-     <!-- BURGER MENU -->
-<div class="hamburger" aria-label="Abrir menu" role="button" tabindex="0">
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
-</div>
-
-<a href="index.html" class="home-link">Inês Costa</a>
-
-
-      </div>
-
-      <!-- DARK / LIGHT MODE -->
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-      
-    </nav>
-
-  </header> 
-
-    
-  <!-- SOBRE -->    
-  <!-- LANDING -->
-  <section id="landing">
-    
-    <h1>Inês Costa</h1>
-
-    <!-- imagens landing -->
-    <div class="imgs-space">
-      <img src="images/main/main-1.jpg" alt="" class="home-imgs" id="1">
-      <img src="images/main/main-2.jpg" alt="" class="home-imgs">
-      <img src="images/main/main-3.jpg" alt="" class="home-imgs">
-      <img src="images/design/residir/1.jpg" alt="" class="home-imgs">
-      <img src="images/ensaios/toque/CAPA_TOQUE.png" alt="" class="home-imgs">
-      <img src="images/ensaios/memorias/14_CAPA_PROJETO.png" alt="" class="home-imgs">
-      <img src="images/ensaios/amelia/CAPA_AMELIA.png" alt="" class="home-imgs">
+    <!-- BURGER MENU -->
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
 
-    <!--seta scroll-->
-    <h3>
-      <img src="images/icons/seta-bottom.png" class="setas" alt="">
-    </h3>
+    <!-- DARK / LIGHT MODE -->
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
 
+  </nav>
+</header>
+
+<!-- LANDING / SOBRE -->
+<section id="landing">
+  <h1>Inês Costa</h1>
+  <div class="imgs-space">
+    <img src="images/main/main-1.jpg" alt="" class="home-imgs" id="1">
+    <img src="images/main/main-2.jpg" alt="" class="home-imgs">
+    <img src="images/main/main-3.jpg" alt="" class="home-imgs">
+    <img src="images/design/residir/1.jpg" alt="" class="home-imgs">
+    <img src="images/ensaios/toque/CAPA_TOQUE.png" alt="" class="home-imgs">
+    <img src="images/ensaios/memorias/14_CAPA_PROJETO.png" alt="" class="home-imgs">
+    <img src="images/ensaios/amelia/CAPA_AMELIA.png" alt="" class="home-imgs">
+  </div>
+  <h3>
+    <img src="images/icons/seta-bottom.png" class="setas" alt="">
+  </h3>
+</section>
+
+<!-- FOTO PERFIL + TEXTO -->
+<section class="foto-e-texto">
+  <section class="img-perfil">
+    <img src="images/sobre/FOTO_BIO_V2.jpg" alt="" id="foto-perfil">
   </section>
+  <article>
+    <p>Inês Costa, nascida em Viseu, no ano de 1998. Designer, pesquisadora e artista multidisciplinar. Formada em Design de Comunicação (2020) e com um mestrado em Design da Imagem (2022), pela FBAUP. </p>
+    <p>A minha pesquisa foca-se, sobretudo, no papel da imagem na construção de narrativas e da memória social e cultural. Faço-o através do cruzamento do design, do cinema e do som, da colagem e do sarcasmo, numa tentativa de problematizar aquilo a que chamamos “imagem”, enquanto ferramenta de linguagem e de ação sócio-política. </p> 
+    <p>Desde 2021, tenho mostrado o meu trabalho em festivais de cinema nacionais como Entre-Olhares, Curtas Vila do Conde, Cinanima, Vista Curta, Porto/Post/Doc e IndieLisboa e atualmente faço direção de criação para a APCA Madeira. Participei em exposições coletivas como “As Memórias dos Outros” (2023), dei workshops de animação para crianças, tanto em contexto de festivais como o Encontros de Viana, mas também enquanto projeto contínuo através de parcerias entre escolas e o Cinanima. Em 2024, fui convidada a participar nas Cartas sobre Design e tenho um texto publicado na revista Alix.</p> 
+    <p>Para além de tudo isso (e porque ser artista não é fácil nesta economia, pelo menos para quem não é herdeiro), desenvolvo trabalho fotográfico para eventos culturais na CRL Central Elétrica, como o Volts24, Volts25 e Watts.</p> 
+    <p>Aquilo que faço não é design, mas a minha formação em design permite-me trabalhar com uma série de ferramentas e recursos, cruzando áreas e saberes, sendo o mais importante de todos, o saber ver. Pesquisei durante quatro anos sobre a relação entre a imagem e a construção de narrativas coloniais, principalmente no contexto português. Depois, comecei a trabalhar sobre a imagem e a memória, de uma forma mais geral. Agora, estou a pesquisar sobre a imagem na era digital, pós-capitalista que já vivemos.  Nunca faço a mesma coisa duas vezes, experimento, erro e erro de novo. Sou curiosa e atenta e tenho muitas opiniões que muitas vezes incomodam. Que bom. Bem-vindo ao meu website, que bom ver-te por cá. Explora-o à vontade e qualquer dúvida, podes sempre escrever-me e perguntar.</p>
+  </article>
+</section>
 
-  <!-- FOTO PERFIL + TEXTO -->
-  <section class="foto-e-texto">
-
-    <!-- foto de perfil -->
-    <section class="img-perfil">
-     <img src="images/sobre/FOTO_BIO_V2.jpg" alt="" id="foto-perfil">
-    </section>
-
-    <!-- texto -->
-    <article>
-      <p>Inês Costa, nascida em Viseu, no ano de 1998. Designer, pesquisadora e artista multidisciplinar. Formada em Design de Comunicação (2020) e com um mestrado em Design da Imagem (2022), pela FBAUP. </p>
-      <p>A minha pesquisa foca-se, sobretudo, no papel da imagem na construção de narrativas e da memória social e cultural. Faço-o através do cruzamento do design, do cinema e do som, da colagem e do sarcasmo, numa tentativa de problematizar aquilo a que chamamos “imagem”, enquanto ferramenta de linguagem e de ação sócio-política. </p> 
-      <p>Desde 2021, tenho mostrado o meu trabalho em  festivais de cinema nacionais como Entre-Olhares, Curtas Vila do Conde, Cinanima, Vista Curta, Porto/Post/Doc e IndieLisboa e atualmente faço direção de criação para a APCA Madeira. Participei em exposições coletivas como “As Memórias dos Outros” (2023), dei workshops de animação para crianças, tanto em contexto de festivais como o Encontros de Viana, mas também enquanto projeto contínuo através de parcerias entre escolas e o Cinanima. Em 2024, fui convidada a participar nas Cartas sobre Design e tenho um texto publicado na revista Alix.</p> 
-      <p>Para além de tudo isso (e porque ser artista não é fácil nesta economia, pelo menos para quem não é herdeiro), desenvolvo trabalho fotográfico para eventos culturais na CRL Central Elétrica, como o Volts24, Volts25 e Watts.</p> 
-      <p>Aquilo que faço não é design, mas a minha formação em design permite-me trabalhar com uma série de ferramentas e recursos, cruzando áreas e saberes, sendo o mais importante de todos, o saber ver. Pesquisei durante quatro anos sobre a relação entre a imagem e a construção de narrativas coloniais, principalmente no contexto português. Depois, comecei a trabalhar sobre a imagem e a memória, de uma forma mais geral. Agora, estou a pesquisar sobre a imagem na era digital, pós-capitalista que já vivemos.  Nunca faço a mesma coisa duas vezes, experimento, erro e erro de novo. Sou curiosa e atenta e tenho muitas opiniões que muitas vezes incomodam. Que bom. Bem-vindo ao meu website, que bom ver-te por cá. Explora-o à vontade e qualquer dúvida, podes sempre escrever-me e perguntar.</p>
-    </article>
-
-  </section> 
-
-
-  <!-- FOTO + MENCOES -->
-  <section class="foto-e-texto">
-
-    <!-- IMAGENS LOGOS -->
-    <section class="home-logos">
-      <div> </div>
-
-      <div> </div>
-
+<!-- FOTO + LOGOS -->
+<section class="foto-e-texto">
+  <section class="home-logos">
+    <div></div>
+    <div></div>
+    <div><img src="images/logos/vista-curta.png" alt="" id="logo-1"></div>
+    <div><img src="images/logos/entre-olhares.png" alt="" id="logo-2"></div>
+    <div><img src="images/logos/porto-post-doc.png" alt="" id="logo-3"></div>
+  </section>
+  <article>
+    <!-- PUBLICACOES -->
+    <h2>Publicações</h2>
+    <div class="grid-premios">
+      <div><h4 class="ano-sticky">2022</h4></div>
       <div>
-        <img src="images/logos/vista-curta.png" alt="" id="logo-1">
+        <p>Costa, Inês. 2022. “Memórias de Pau-Preto e Marfim: A imagem e o arquivo familiar na contribuição de narrativas pós-coloniais”. Porto: Universidade do Porto
+        <br><a href="https://repositorio-aberto.up.pt/handle/10216/146857" target="_blank">Disponível aqui</a></p>
+        <h4>International Counter-Image Conference</h4>
+        <p>Costa, Inês; Marques, Susana Lourenço. “Memórias de Pau-preto e Marfim: A imagem e o arquivo familiar na contribuição de narrativas pós-coloniais”. Conferência Internacional Counter-Image, Lisboa, 2022
+        <br><a href="https://drive.google.com/drive/folders/14hYu3B-nsiL0b2qeNljJRhHkFXurRpID" target="_blank">Disponível aqui</a></p>
+        <h4>Alix, Jornal de Estudos de Fotografia e Cinema</h4>
+        <p>“Bostofrio: Où le ciel rejoint la terre”, 2022, Olhar-Ver
+        <br><a href="https://alix.fba.up.pt" target="_blank">Disponível aqui</a></p>
       </div>
+    </div>
 
+    <!-- SCREENINGS -->
+    <h2>Screenings</h2>
+    <div class="grid-premios">
+      <div><h4 class="ano-sticky">2021</h4></div>
       <div>
-        <img src="images/logos/entre-olhares.png" alt="" id="logo-2">
+        <h4>Seleção Oficial do Vista Curta</h4>
+        <p>Produção Local, “Amélia”</p>
+        <h4>Curtas à Primeira Vista “Amélia”</h4>
+        <p>Seleção Oficial Entre-Olhares <br>Extensão do Entre-Olhares de Cinema ao Ar Livre;</p>
+        <h4>Seleção Oficial Porto/Post/Doc</h4>
+        <p>Competição Cinema Novo “Amélia”</p>
       </div>
-
+      <div><h4 class="ano-sticky">2020</h4></div>
       <div>
-        <img src="images/logos/porto-post-doc.png" alt="" id="logo-3">
+        <h4>Seleção Oficial Curtas Vila do Conde</h4>
+        <p>Competição Take One! “Toque”</p>
       </div>
+    </div>
 
-    </section>
+    <!-- PREMIOS -->
+    <h2>Prémios</h2>
+    <div class="grid-premios">
+      <div><h4 class="ano-sticky">2021</h4></div>
+      <div><h4>Melhor Filme “Amélia”</h4><p>Competição Local do Vista Curta</p></div>
+      <div><h4 class="ano-sticky">2020</h4></div>
+      <div><h4>Prémio de Aquisição de Design da FBAUP</h4><p>Faculdade de Belas Artes da Universidade do Porto</p></div>
+    </div>
+  </article>
+</section>
 
+<!-- CONTACTOS -->
+<section id="contactos">
+  <h2>Para contacto de trabalho ou colaboração</h2>
+  <article>
+    <div onmousemove="typeEmail()" onclick="window.open('mailto:ines_sd_costa@hotmail.com','mywindow')">
+      <p>Email<br><span id="txtEmail"></span></p>
+    </div>
+    <div onmousemove="typeVimeo()" onclick="window.open('https://vimeo.com/inesxcosta','mywindow')">
+      <p>Vimeo<br><span id="txtVimeo"></span></p>
+    </div>
+    <div onmousemove="typeBehance()" onclick="window.open('https://www.behance.net/inesscosta','mywindow')">
+      <p>Behance<br><span id="txtBehance"></span></p>
+    </div>
+    <div onmousemove
+    <div onmousemove="typeInstagram()" onclick="window.open('https://www.instagram.com/inesxcostax','mywindow')">
+      <p>Instagram<br><span id="txtInstagram"></span></p>
+    </div>
+  </article>
+  <p>Porto, Portugal</p>
+</section>
 
-    <!-- TEXTO MENCOES E PREMIOS -->
-    <article>
+<!-- CREDITOS -->
+<section id="creditos">
+  <p><b>Colofão</b></p>
+  <p>Website desenhado e desenvolvido por <a href="https://aleite.design/" target="_blank">Ana Leite</a>, em dezembro de 2022.</p>
+  <p>Fonte tipográfica <a href="https://velvetyne.fr/fonts/fengardo-neue/" target="_blank">Fengardo Neue</a>, de Velvetyne Type Foundry, desenhada por Loïc Sander.</p>
+</section>
 
-      <!-- PUBLICACOES -->
-      <h2>Publicações</h2>
-    
-      <div class="grid-premios">
-    
-        <!-- ANO 2022 -->
-        <div>
-          <h4 class="ano-sticky">2022</h4> 
-        </div>
-    
-        <div>  
-          <!-- (3) -->
-          <p>Costa, Inês. 2022. “Memórias de Pau-Preto e Marfim: A imagem e o arquivo familiar na contribuição de narrativas pós-coloniais”. Porto: Universidade do Porto
-          <br><a href="https://repositorio-aberto.up.pt/handle/10216/146857" target="_blank" >Disponível aqui</a>
-          </p>
-                           
-          <!-- (2) -->
-          <h4>International Counter-Image Conference</h4>
-          
-          <p>Costa, Inês; Marques, Susana Lourenço. “Memórias de Pau-preto e Marfim: A imagem e o arquivo familiar na contribuição de narrativas pós-coloniais”. Conferência Internacional Counter-Image, Lisboa, 2022
-          <br><a href="https://drive.google.com/drive/folders/14hYu3B-nsiL0b2qeNljJRhHkFXurRpID
-            " target="_blank" >Disponível aqui</a>
-          </p>
-          
-                
-          <!-- (1) -->
-          <h4>Alix, Jornal de Estudos de Fotografia e Cinema</h4>
-    
-          <p>“Bostofrio: Où le ciel rejoint la terre”, 2022, Olhar-Ver
-          <br><a href="https://alix.fba.up.pt" target="_blank">Disponível aqui</a></p>
-        </div>
-    
-      </div>
+<!-- FOOTER -->
+<footer>
+  <nav> 
+    <div onclick="topFunction()">
+      <img src="images/icons/seta-top.png" class="setas" alt="">
+    </div>
+  </nav>
+</footer>
 
-      <!-- SCREENINGS -->
-      <h2>Screenings</h2>
-    
-      <div class="grid-premios">
-
-        <!-- ANO 2021 -->
-        <div>
-          <h4 class="ano-sticky">2021</h4> 
-        </div>
-
-        <div>
-          <!-- (3) -->
-          <h4>Seleção Oficial do Vista Curta</h4>
-          <p>Produção Local, “Amélia”</p>
-
-          <!-- (2) -->
-          <h4>Curtas à Primeira Vista “Amélia”</h4>
-          <p>Seleção Oficial Entre-Olhares <br>Extensão do Entre-Olhares de Cinema ao Ar Livre;</p>
-
-          <!-- (1) -->
-          <h4>Seleção Oficial Porto/Post/Doc</h4>
-          <p>Competição Cinema Novo “Amélia”</p>
-        </div>
-
-        <!-- ANO 2020 -->
-        <div>
-          <h4 class="ano-sticky">2020</h4> 
-        </div>
-        
-        <div>
-          <!-- (1) -->
-          <h4>Seleção Oficial Curtas Vila do Conde</h4>
-          <p>Competição Take One! “Toque”</p>     
-        </div>
-        
-      </div>
-
-      <!-- PREMIOS -->
-      <h2>Prémios</h2>
-
-      <div class="grid-premios">
-
-        <!-- ANO 2021 -->
-        <div>
-          <h4 class="ano-sticky">2021</h4> 
-        </div>
-
-        <div>        
-          <!-- (1) -->
-          <h4>Melhor Filme “Amélia”</h4>
-          <p>Competição Local do Vista Curta</p>     
-        </div>
-
-        <!-- ANO 2020 -->
-        <div>
-          <h4 class="ano-sticky">2020</h4> 
-        </div>
-                        
-        <div>           
-          <!-- (1) -->
-          <h4>Prémio de Aquisição de Design da FBAUP</h4>    
-          <p>Faculdade de Belas Artes da Universidade do Porto</p>               
-        </div>
-
-      </div>
-      
-    </article>
-    
-  </section>
-
-  <!-- CONTACTOS -->
-  <section id="contactos">
-
-    <h2>Para contacto de trabalho ou colaboração</h2>
-
-    <article>
-
-      <div onmousemove="typeEmail()" onclick="window.open('mailto:ines_sd_costa@hotmail.com', 'mywindow');"> 
-        <p>Email<br><span id="txtEmail"></span></p>
-      </div>
-
-      <div onmousemove="typeVimeo()" onclick="window.open('https://vimeo.com/inesxcosta', 'mywindow');">
-        <p>Vimeo<br><span id="txtVimeo"></span></p>
-      </div>
-
-      <div onmousemove="typeBehance()" onclick="window.open('https://www.behance.net/inesscosta', 'mywindow');">
-        <p>Behance<br><span id="txtBehance"></span></p> 
-      </div>
-
-      <div onmousemove="typeInstagram()" onclick="window.open('https://www.instagram.com/inesxcostax', 'mywindow');">
-        <p>Instagram<br> <span id="txtInstagram"></span></p> 
-      </div>
-
-    </article>
-
-    <p>Porto, Portugal</p>
-
-  </section>
-
-
-  <!-- CREDITOS -->
-  <section id="creditos">
-
-    <p><b>Colofão</b></p>
-    
-    <p>Website desenhado e desenvolvido por <a href="https://aleite.design/" target="_blank">Ana Leite</a>, em dezembro de 2022.</p>
-    <p>Fonte tipográfica <a href="https://velvetyne.fr/fonts/fengardo-neue/" target="_blank">Fengardo Neue</a>, de Velvetyne Type Foundry, desenhada por Loïc Sander.</p>
-
-  </section>
-       
-  
-  <!-- FOOTER -->
-  <footer>
-    <nav> 
-      <div onclick="topFunction()"><img src="images/icons/seta-top.png" class="setas" alt=""></div>
-    </nav>
-  </footer>
-
-  <!-- JAVA SCRIPT -->
-  <script src="main.js"></script>
+<!-- JAVASCRIPT -->
+<script src="main.js"></script>
 
 </body>
-  
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
