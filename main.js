@@ -148,20 +148,25 @@ function typeInstagram() {
 
 // ILUSTRAÇÃO -------------------------------------------
 // SCROLL HORIZONTAL
-let sectionFotografia = document.querySelector("#fotografia");
-let sectionExp = document.querySelector("#experiencias-visuais");
+if (sectionFotografia) {
+  window.addEventListener("wheel", (evt) => {
+    if (evt.target.closest("#fotografia")) {
+      evt.preventDefault();
+      sectionFotografia.scrollLeft += evt.deltaY;
+    }
+  });
+}
 
-window.addEventListener("wheel", (evt) => {
-  if (evt.target.closest("#fotografia")) {
-    evt.preventDefault();
-    sectionFotografia.scrollLeft += evt.deltaY;
-  }
+if (sectionExp) {
+  window.addEventListener("wheel", (evt) => {
+    if (evt.target.closest("#experiencias-visuais")) {
+      evt.preventDefault();
+      sectionExp.scrollLeft += evt.deltaY;
+    }
+  });
+}
 
-  if (evt.target.closest("#experiencias-visuais")) {
-    evt.preventDefault();
-    sectionExp.scrollLeft += evt.deltaY;
-  }
-});
+
 
 
 
