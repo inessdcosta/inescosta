@@ -1,5 +1,3 @@
-console.log("Hello world!");
-
 // GENERAL SETTINGS
 // HEADER ------------------------------------------
 // BRUGER MENU
@@ -170,6 +168,7 @@ if (sectionExp) {
 
   });
 }
+
 
 
 
