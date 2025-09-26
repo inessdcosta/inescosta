@@ -53,55 +53,50 @@ function topFunction() {
 // PAGES -------------------------------------------
 //HOME / ABOUT PAGE -------------------------------------------
 //IMAGENS LANDING 
-const sobreImg= document.querySelectorAll('.home-imgs');
+const sobreImg = document.querySelectorAll('.home-imgs');
 
-sobreImg.forEach(function(imgs) {
+sobreImg.forEach(function (imgs) {
+	// RANDOM POSITION INSIDE "IMGS-SPACE"
+	let imgsSpaceSobre = document.querySelector('.imgs-space');
+	let widthSpaceSobre = imgsSpaceSobre.offsetWidth;
+	let heightSpaceSobre = imgsSpaceSobre.offsetHeight;
 
- // RANDOM POSITION INSIDE "IMGS-SPACE"
-let imgsSpaceSobre = document.querySelector('.imgs-space');
-let widthSpaceSobre = imgsSpaceSobre.offsetWidth;
-let heightSpaceSobre = imgsSpaceSobre.offsetHeight;
+	imgs.style.left = Math.random() * widthSpaceSobre + "px"; // 👈🏼 Horizontally
+	imgs.style.bottom = Math.random() * heightSpaceSobre + "px"; // 👈🏼 Vertically
 
-// garantir que a imagem não sai fora do espaço
-let maxLeft = Math.max(0, widthSpaceSobre - imgs.offsetWidth);
-let maxBottom = Math.max(0, heightSpaceSobre - imgs.offsetHeight);
+	// RANDOM ROTATION
+	const getRandomRotation = (min, max) =>
+		Math.floor(Math.random() * (max - min + 1) + min);
 
-imgs.style.left= Math.random() * widthSpaceSobre + "px";    // 👈🏼 Horizontally
-imgs.style.bottom = Math.random() * heightSpaceSobre + "px" ;// 👈🏼 Vertically
+	imgs.style.transform = 'rotate(' + getRandomRotation(-10, 10) + 'deg)'; // (entre -10deg e 10deg)
 
-// RANDOM ROTATION
-const getRandomRotation = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-imgs.style.transform = 'rotate(' + getRandomRotation(-10, 10) + 'deg)'; //(entre -10deg e 10deg)
-
-
-  // MOVMENT WITH SCROLL Y 
-  document.addEventListener("scroll", (event) => {
-    //console.log(window.scrollY);
-
-    if (window.scrollY<100) {
-      imgs.style.left= Math.random() * widthSpaceSobre + "px"; // 👈🏼 Horizontally
-
-    } else {
-      imgs.style.left= "-100px";
-    }
-  });
-
+	// MOVEMENT WITH SCROLL Y
+	document.addEventListener("scroll", (event) => {
+		//console.log(window.scrollY);
+		if (window.scrollY < 100) {
+			imgs.style.left = Math.random() * widthSpaceSobre + "px"; // 👈🏼 Horizontally
+		} else {
+			imgs.style.left = "-100px";
+		}
+	});
 });
 
-//ROTATE IMAGES (PERFIL + LOGOS) ON SCROLL
-window.onscroll = function() {
-  let theta = document.documentElement.scrollTop / -8000 % Math.PI;
+// ROTATE IMAGES (PERFIL + LOGOS) ON SCROLL
+window.onscroll = function () {
+	let theta = document.documentElement.scrollTop / -8000 % Math.PI;
 
-  // foto de perfil
-  document.getElementById('foto-perfil').style.transform ='rotate(' + theta + 'rad)';
+	// foto de perfil
+	document.getElementById('foto-perfil').style.transform =
+		'rotate(' + theta + 'rad)';
 
-  // logos
-  document.getElementById('logo-1').style.transform ='rotate(' + theta + 'rad)';
-
-  document.getElementById('logo-2').style.transform ='rotate(' + -theta + 'rad)';
-
-  document.getElementById('logo-3').style.transform ='rotate(' + theta + 'rad)';
-}
+	// logos
+	document.getElementById('logo-1').style.transform =
+		'rotate(' + theta + 'rad)';
+	document.getElementById('logo-2').style.transform =
+		'rotate(' + -theta + 'rad)';
+	document.getElementById('logo-3').style.transform =
+		'rotate(' + theta + 'rad)';
+};
 
 // CONTACTOS
 // TEXT TYPING
@@ -168,6 +163,7 @@ if (sectionExp) {
 
   });
 }
+
 
 
 
